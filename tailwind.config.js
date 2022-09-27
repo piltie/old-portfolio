@@ -6,6 +6,7 @@ module.exports = {
     extend: {
       fontFamily: {
         Poppins: "Poppins",
+        JosefinSlab: "Josefin Slab",
       },
       colors: {
         yellow: {
@@ -27,6 +28,15 @@ module.exports = {
         },
         pink: {
           "pastel-light": "#C8B6E2",
+        },
+        white: {
+          "pastel-light": "#FEFBF3",
+          "pastel-medium": "#F8EDE3",
+        },
+        brown: {
+          "pastel-light": "#DFD3C3",
+          "pastel-dark": "#8E806A",
+          "pastel-medium": "#CDBBA7",
         },
       },
     },

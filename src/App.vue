@@ -1,17 +1,14 @@
 <template>
-  <div><Menu /></div>
-  <div><Home /></div>
+  <Layout />
 </template>
 
 <script>
-import Menu from "./components/MenuHeader.vue";
-import Home from "./components/HomeBody.vue";
+import Layout from "./components/layouts/MainLayout.vue";
 
 export default {
   name: "App",
   components: {
-    Menu,
-    Home,
+    Layout,
   },
 };
 </script>

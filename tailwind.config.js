@@ -7,6 +7,7 @@ module.exports = {
       fontFamily: {
         Poppins: "Poppins",
         JosefinSlab: "Josefin Slab",
+        NotoSansMono: "Noto Sans Mono",
       },
       colors: {
         yellow: {

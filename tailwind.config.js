@@ -8,6 +8,8 @@ module.exports = {
         Poppins: "Poppins",
         JosefinSlab: "Josefin Slab",
         NotoSansMono: "Noto Sans Mono",
+        JosefinSans: "Josefin Sans",
+        PTSans: "PT Sans",
       },
       colors: {
         yellow: {
@@ -31,13 +33,14 @@ module.exports = {
           "pastel-light": "#C8B6E2",
         },
         white: {
-          "pastel-light": "#FEFBF3",
-          "pastel-medium": "#F8EDE3",
+          "pastel-light": "#fffefd",
+          "pastel-medium": "#f7f5f2",
         },
         brown: {
           "pastel-light": "#DFD3C3",
-          "pastel-dark": "#8E806A",
+          "pastel-dark": "#7b6d57",
           "pastel-medium": "#CDBBA7",
+          "pastel-darker": "#472D2D",
         },
       },
     },

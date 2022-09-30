@@ -1,63 +1,72 @@
 <template>
   <div
-    class="bg-white-pastel-light font-JosefinSlab font-semibold text-[1.2em] shadow-[0_2px_1.8px_-2px_#cfcfcf] text-brown-pastel-dark grid grid-cols-[minmax(200px,_1fr)_minmax(450px,_9fr)_minmax(200px,_1fr)] items-center"
+    class="flex flex-row-reverse justify-between bg-white-pastel-light font-JosefinSlab tracking-wide font-semibold text-[1.15em] border-[#dddcdc] border-[0.01px] text-brown-pastel-dark md:grid md:grid-cols-[minmax(4em,_1fr)_9fr_minmax(4em,_1fr)] items-center"
   >
-    <div class="flex justify-center ml-16 min-w-[6em]">
-      <div>
-        <button class="flex" type="button">
-          <SunIcon class="w-[1.2em] hover:text-brown-pastel-medium" />
-        </button>
-      </div>
+    <div class="flex justify-center min-w-[4em]">
+      <button type="button">
+        <SunIcon class="w-[1.2em] hover:text-brown-pastel-medium" />
+      </button>
     </div>
     <nav>
       <ul class="flex justify-center">
         <li>
-          <a class="block px-7 py-6 hover:text-brown-pastel-medium" href="#home"
-            >Home</a
+          <a class="block px-7 py-5 hover:text-brown-pastel-medium" href="#home"
+            >home</a
           >
         </li>
-        <li>
+        <li v-if="windowWidth >= mdWidth">
           <a
-            class="block px-7 py-6 hover:text-brown-pastel-medium"
+            class="block px-7 py-5 hover:text-brown-pastel-medium"
             href="#sobre"
-            >Sobre</a
+            >sobre</a
           >
         </li>
-        <li>
+        <li v-if="windowWidth >= mdWidth">
           <a
-            class="block px-7 py-6 hover:text-brown-pastel-medium"
+            class="block px-7 py-5 hover:text-brown-pastel-medium"
             href="#experiencia"
-            >Experiência</a
+            >experiência</a
           >
         </li>
       </ul>
     </nav>
-
-    <div class="flex flex-nowrap justify-between mr-16 w-[6.5em]">
-      <a
-        href="https://github.com/piltie"
-        target="_blank"
-        class="hover:text-brown-pastel-medium flex items-center"
-        ><i class="fa-brands fa-github"></i
-      ></a>
-      <a href="#footer" class="hover:text-brown-pastel-medium"
-        ><AtSymbolIcon class="w-[1.1em]"
-      /></a>
-      <a
-        href="https://www.linkedin.com/in/sarah-carla-souza-31166b207"
-        target="_blank"
-        class="hover:text-brown-pastel-medium flex items-center"
-        ><i class="fa-brands fa-linkedin"></i
-      ></a>
+    <div class="flex justify-center" v-if="windowWidth >= mdWidth">
+      <button class="flex" type="button">
+        <i class="fa-solid fa-paw hover:text-brown-pastel-medium"></i>
+      </button>
+    </div>
+    <div class="flex justify-center min-w-[4em]" v-if="windowWidth < mdWidth">
+      <button type="button">
+        <Bars3Icon class="w-[1.2em] hover:text-brown-pastel-medium" />
+      </button>
     </div>
   </div>
 </template>
 
 <script>
-import { SunIcon, AtSymbolIcon } from "@heroicons/vue/24/outline";
+import { SunIcon, Bars3Icon } from "@heroicons/vue/24/outline";
+import resolveConfig from "tailwindcss/resolveConfig";
+import tailwindConfig from "../../tailwind.config";
 
 export default {
   name: "MenuHeader",
-  components: { SunIcon, AtSymbolIcon },
+  components: { SunIcon, Bars3Icon },
+  data() {
+    return {
+      windowWidth: window.innerWidth,
+      mdWidth: 0,
+    };
+  },
+  mounted() {
+    const fullConfig = resolveConfig(tailwindConfig);
+    const mdWidth = parseInt(fullConfig.theme.screens.md.replace("px", ""));
+    this.mdWidth = mdWidth;
+
+    this.$nextTick(() => {
+      window.onresize = () => {
+        this.windowWidth = window.innerWidth;
+      };
+    });
+  },
 };
 </script>

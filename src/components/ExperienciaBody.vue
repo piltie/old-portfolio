@@ -4,10 +4,9 @@
       <h1
         class="px-[1em] text-center font-JosefinSlab tracking-[0.2em] font-semibold text-[1.7em] text-brown-pastel-darker bg-brown-pastel-light"
       >
-        SOBRE
+        EXPERIÊNCIA
       </h1>
     </div>
-
     <p class="py-[2em]">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec volutpat
       ex, sed sodales risus. Sed libero odio, porttitor eget hendrerit non,

@@ -1,6 +1,6 @@
 <template>
   <div
-    class="md:py-[7em] py-[3em] font-JosefinSlab text-[1.12em] text-brown-pastel-dark"
+    class="md:py-[8em] py-[3em] font-JosefinSlab text-[1.12em] text-brown-pastel-dark"
   >
     <div
       class="flex md:flex-row flex-col m-auto w-[21.5em] justify-between animate__animated animate__fadeInUp"

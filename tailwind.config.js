@@ -10,6 +10,10 @@ module.exports = {
         NotoSansMono: "Noto Sans Mono",
         JosefinSans: "Josefin Sans",
         PTSans: "PT Sans",
+        PTSerif: "PT Serif",
+      },
+      screens: {
+        "project-img": { max: "1024px" },
       },
       colors: {
         yellow: {
@@ -45,5 +49,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwind-scrollbar")],
 };

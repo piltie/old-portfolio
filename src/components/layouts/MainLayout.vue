@@ -1,16 +1,17 @@
 <template>
   <div class="bg-white-pastel-medium">
-    <header
-      class="flex flex-row-reverse justify-between bg-white-pastel-light font-JosefinSlab tracking-wide font-semibold text-[1.4em] border-[#dddcdc] border-[0.01px] text-brown-pastel-dark md:grid md:grid-cols-[minmax(4em,_1fr)_9fr_minmax(4em,_1fr)] items-center sticky top-0 z-10"
-    >
-      <Menu />
-    </header>
+    <Menu />
+    <Home />
 
-    <Home id="#home" />
-    <main class="w-[80%] m-auto animate__animated animate__fadeInUp">
-      <Sobre />
-      <Experiencia />
-      <Projetos />
+    <main class="m-auto w-[80%]">
+      <Article
+        v-for="article in articles"
+        :key="article.title"
+        :title="article.title"
+        :text="article.text ? article.text : false"
+        :images="article.images ? article.images : false"
+        class="animate__animated animate__fadeInUp"
+      />
     </main>
   </div>
 </template>
@@ -18,18 +19,41 @@
 <script>
 import Menu from "../MenuHeader.vue";
 import Home from "../HomeBody.vue";
-import Sobre from "../SobreBody.vue";
-import Experiencia from "../ExperienciaBody.vue";
-import Projetos from "../ProjetosBody.vue";
+import Article from "../ArticleTemplate.vue";
 
 export default {
   name: "App",
   components: {
     Menu,
     Home,
-    Sobre,
-    Experiencia,
-    Projetos,
+    Article,
+  },
+  data() {
+    return {
+      articles: [
+        {
+          title: "SOBRE",
+          text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec volutpat ex, sed sodales risus. Sed libero odio, porttitor eget hendrerit non, sollicitudin a quam. Cras consequat, tortor vel congue lacinia, enim nisi ultrices augue, a imperdiet metus lacus et nulla. Sed interdum vitae dolor in dapibus. Cras vulputate convallis ligula, at semper velit tempus vitae. Fusce ac lacus vel ligula euismod dapibus. Fusce sit amet placerat orci. Vestibulum vel orci libero. Vestibulum nec vehicula elit, nec fermentum justo. Mauris vulputate augue nec massa pellentesque, id ultricies risus rutrum. Sed rutrum ligula non libero elementum, ac bibendum nunc posuere. Phasellus non lobortis turpis. Ut iaculis urna convallis est vulputate iaculis. Sed nec convallis sem.",
+        },
+        {
+          title: "EXPERIÊNCIA",
+          text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec volutpat ex, sed sodales risus. Sed libero odio, porttitor eget hendrerit non, sollicitudin a quam. Cras consequat, tortor vel congue lacinia, enim nisi ultrices augue, a imperdiet metus lacus et nulla. Sed interdum vitae dolor in dapibus. Cras vulputate convallis ligula, at semper velit tempus vitae. Fusce ac lacus vel ligula euismod dapibus. Fusce sit amet placerat orci. Vestibulum vel orci libero. Vestibulum nec vehicula elit, nec fermentum justo. Mauris vulputate augue nec massa pellentesque, id ultricies risus rutrum. Sed rutrum ligula non libero elementum, ac bibendum nunc posuere. Phasellus non lobortis turpis. Ut iaculis urna convallis est vulputate iaculis. Sed nec convallis sem.",
+        },
+        {
+          title: "PROJETOS",
+          images: [
+            {
+              src: "molang.png",
+              alt: "Molang",
+            },
+            {
+              src: "gatteria.png",
+              alt: "Gatteria",
+            },
+          ],
+        },
+      ],
+    };
   },
 };
 </script>

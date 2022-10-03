@@ -17,3 +17,19 @@
 @tailwind components;
 
 @tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-JosefinSlab;
+  }
+  a,
+  button {
+    @apply hover:text-brown-pastel-medium;
+  }
+  h1 {
+    @apply font-bold;
+  }
+  h2 {
+    @apply font-medium;
+  }
+}

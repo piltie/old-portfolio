@@ -1,73 +1,58 @@
 <template>
-  <div class="flex justify-center min-w-[4em]">
-    <button type="button">
-      <SunIcon class="w-[1.2em] hover:text-brown-pastel-medium" />
+  <header
+    class="sticky z-10 flex flex-row-reverse items-center justify-between border-[0.01px] border-[#dddcdc] bg-white-pastel-light text-[1.4em] font-semibold tracking-wide text-brown-pastel-dark md:grid md:grid-cols-[minmax(4em,_1fr)_9fr_minmax(4em,_1fr)]"
+  >
+    <button type="button" class="flex min-w-[4em] justify-center">
+      <SunIcon class="w-[1.2em]" />
     </button>
-  </div>
-  <nav>
-    <ul class="flex justify-center">
-      <li>
-        <a class="block px-7 py-5 hover:text-brown-pastel-medium" href="#home"
-          >home</a
-        >
-      </li>
-      <li v-if="windowWidth >= mdWidth">
-        <a class="block px-7 py-5 hover:text-brown-pastel-medium" href="#sobre"
-          >sobre</a
-        >
-      </li>
-      <li v-if="windowWidth >= mdWidth">
-        <a
-          class="block px-7 py-5 hover:text-brown-pastel-medium"
-          href="#experiencia"
-          >experiência</a
-        >
-      </li>
-      <li v-if="windowWidth >= mdWidth">
-        <a
-          class="block px-7 py-5 hover:text-brown-pastel-medium"
-          href="#projetos"
-          >projetos</a
-        >
-      </li>
-    </ul>
-  </nav>
-  <div class="flex justify-center" v-if="windowWidth >= mdWidth">
-    <button class="flex" type="button">
-      <i class="fa-solid fa-paw hover:text-brown-pastel-medium"></i>
+
+    <nav>
+      <ul class="flex justify-center">
+        <li v-for="(option, index) in menu" :key="option.name">
+          <a
+            :class="[index > 0 ? 'hidden md:block' : '', 'block px-7 py-5']"
+            :href="option.href"
+            >{{ option.name }}</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <button class="hidden justify-center md:flex" type="button">
+      <i class="fa-solid fa-paw"></i>
     </button>
-  </div>
-  <div class="flex justify-center min-w-[4em]" v-if="windowWidth < mdWidth">
-    <button type="button">
-      <Bars3Icon class="w-[1.2em] hover:text-brown-pastel-medium" />
+    <button type="button" class="flex min-w-[4em] justify-center md:hidden">
+      <Bars3Icon class="w-[1.2em]" />
     </button>
-  </div>
+  </header>
 </template>
 
 <script>
 import { SunIcon, Bars3Icon } from "@heroicons/vue/24/outline";
-import resolveConfig from "tailwindcss/resolveConfig";
-import tailwindConfig from "../../tailwind.config";
 
 export default {
   name: "MenuHeader",
   components: { SunIcon, Bars3Icon },
   data() {
     return {
-      windowWidth: window.innerWidth,
-      mdWidth: 0,
+      menu: [
+        {
+          name: "home",
+          href: "#home",
+        },
+        {
+          name: "sobre",
+          href: "#sobre",
+        },
+        {
+          name: "experiência",
+          href: "#experiencia",
+        },
+        {
+          name: "projetos",
+          href: "#projetos",
+        },
+      ],
     };
-  },
-  mounted() {
-    const fullConfig = resolveConfig(tailwindConfig);
-    const mdWidth = parseInt(fullConfig.theme.screens.md.replace("px", ""));
-    this.mdWidth = mdWidth;
-
-    this.$nextTick(() => {
-      window.onresize = () => {
-        this.windowWidth = window.innerWidth;
-      };
-    });
   },
 };
 </script>

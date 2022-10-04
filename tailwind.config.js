@@ -39,6 +39,7 @@ module.exports = {
         white: {
           "pastel-light": "#fffefd",
           "pastel-medium": "#f7f5f2",
+          default: "#ffffff",
         },
         brown: {
           "pastel-light": "#DFD3C3",

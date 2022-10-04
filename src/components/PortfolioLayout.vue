@@ -2,7 +2,6 @@
   <div class="bg-white-pastel-medium">
     <Menu />
     <Home />
-
     <main class="m-auto w-[80%]">
       <Article
         v-for="article in articles"
@@ -13,20 +12,23 @@
         class="animate__animated animate__fadeInUp"
       />
     </main>
+    <Footer />
   </div>
 </template>
 
 <script>
-import Menu from "../MenuHeader.vue";
-import Home from "../HomeBody.vue";
-import Article from "../ArticleTemplate.vue";
+import Menu from "./PortfolioMenu.vue";
+import Home from "./PortfolioHome.vue";
+import Footer from "./PortfolioFooter.vue";
+import Article from "./ArticleTemplate.vue";
 
 export default {
-  name: "App",
+  name: "PortfolioLayout",
   components: {
     Menu,
     Home,
     Article,
+    Footer,
   },
   data() {
     return {
@@ -45,10 +47,29 @@ export default {
             {
               src: "molang.png",
               alt: "Molang",
+              caption: "HTML5, CSS3 & Vanilla JS",
+              link: "https://github.com/piltie/E-commerce-website",
             },
             {
               src: "gatteria.png",
               alt: "Gatteria",
+              caption: "Vue 3 & Tailwind CSS",
+              link: "https://github.com/piltie/E-commerce-website-Vue-",
+            },
+            {
+              src: "embreve.png",
+              alt: "Em breve",
+              caption: "React & ASP .NET Core MVC",
+            },
+            {
+              src: "embreve.png",
+              alt: "Em breve",
+              caption: "Angular & ASP .NET Core MVC",
+            },
+            {
+              src: "embreve.png",
+              alt: "Em breve",
+              caption: "ASP .NET Core Web API",
             },
           ],
         },

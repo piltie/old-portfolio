@@ -34,7 +34,7 @@
 import { AtSymbolIcon } from "@heroicons/vue/24/outline";
 
 export default {
-  name: "MenuHeader",
+  name: "PortfolioHome",
   components: { AtSymbolIcon },
 };
 </script>

@@ -1,6 +1,6 @@
 <template>
   <header
-    class="sticky z-10 flex flex-row-reverse items-center justify-between border-[0.01px] border-[#dddcdc] bg-white-pastel-light text-[1.4em] font-semibold tracking-wide text-brown-pastel-dark md:grid md:grid-cols-[minmax(4em,_1fr)_9fr_minmax(4em,_1fr)]"
+    class="sticky top-0 z-10 flex flex-row-reverse items-center justify-between border-[0.01px] border-[#dddcdc] bg-white-pastel-light text-[1.4em] font-semibold tracking-wide text-brown-pastel-dark md:grid md:grid-cols-[minmax(4em,_1fr)_9fr_minmax(4em,_1fr)]"
   >
     <button type="button" class="flex min-w-[4em] justify-center">
       <SunIcon class="w-[1.2em]" />
@@ -30,7 +30,7 @@
 import { SunIcon, Bars3Icon } from "@heroicons/vue/24/outline";
 
 export default {
-  name: "MenuHeader",
+  name: "PortfolioMenu",
   components: { SunIcon, Bars3Icon },
   data() {
     return {

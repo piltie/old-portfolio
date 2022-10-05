@@ -17,13 +17,13 @@
 </template>
 
 <script>
-import Menu from "./PortfolioMenu.vue";
-import Home from "./PortfolioHome.vue";
-import Footer from "./PortfolioFooter.vue";
+import Menu from "./MenuPortfolio.vue";
+import Home from "./HomePortfolio.vue";
+import Footer from "./FooterPortfolio.vue";
 import Article from "./ArticleTemplate.vue";
 
 export default {
-  name: "PortfolioLayout",
+  name: "LayoutPortfolio",
   components: {
     Menu,
     Home,
@@ -47,24 +47,24 @@ export default {
             {
               src: "molang.png",
               alt: "Molang",
-              caption: "HTML5, CSS3 & Vanilla JS",
+              caption: "HTML5, CSS3 e Vanilla JS",
               link: "https://github.com/piltie/E-commerce-website",
             },
             {
               src: "gatteria.png",
               alt: "Gatteria",
-              caption: "Vue 3 & Tailwind CSS",
+              caption: "Vue 3 e Tailwind CSS",
               link: "https://github.com/piltie/E-commerce-website-Vue-",
             },
             {
               src: "embreve.png",
               alt: "Em breve",
-              caption: "React & ASP .NET Core MVC",
+              caption: "React e ASP .NET Core MVC",
             },
             {
               src: "embreve.png",
               alt: "Em breve",
-              caption: "Angular & ASP .NET Core MVC",
+              caption: "Angular e ASP .NET Core MVC",
             },
             {
               src: "embreve.png",

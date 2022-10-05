@@ -1,15 +1,17 @@
 <template>
-  <div class="pb-[3em]">
-    <div class="flex h-[2em] justify-center px-[0.5em]">
+  <div class="pt-[6em]" :id="title">
+    <div class="flex justify-center">
       <h1
-        class="bg-brown-pastel-light px-[1em] text-center text-[1.7em] tracking-[0.2em] text-brown-pastel-darker"
+        class="text-center font-JosefinSans text-[2.5em] font-semibold text-brown-pastel-dark"
       >
         {{ title }}
       </h1>
     </div>
 
     <div>
-      <p v-if="text" class="py-[2em]">{{ text }}</p>
+      <p v-if="text" class="py-[2em] text-[1.1em] font-semibold text-[#7c7b7b]">
+        {{ text }}
+      </p>
       <div
         v-if="images"
         class="m-auto flex w-[95%] flex-wrap justify-center pb-[2em] text-center text-[1.2em] project-img:w-[100%] project-img:flex-col"
@@ -24,13 +26,13 @@
               :src="require(`../assets/images/${image.src}`)"
               :alt="image.alt"
           /></a>
-          <h2 class="p-[1em] font-semibold">
+          <h2 class="p-[1em] text-[1em] font-medium text-[#888787]">
             {{ image.caption }}
           </h2>
         </div>
       </div>
     </div>
-    <hr class="py-[1em]" />
+    <hr />
   </div>
 </template>
 

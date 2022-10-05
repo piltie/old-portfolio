@@ -11,9 +11,11 @@ module.exports = {
         JosefinSans: "Josefin Sans",
         PTSans: "PT Sans",
         PTSerif: "PT Serif",
+        Montserrat: "Montserrat",
       },
       screens: {
         "project-img": { max: "1024px" },
+        "menu-md": { min: "851px" },
       },
       colors: {
         yellow: {
@@ -45,6 +47,7 @@ module.exports = {
           "pastel-light": "#DFD3C3",
           "pastel-dark": "#7b6d57",
           "pastel-medium": "#CDBBA7",
+          "pastel-medium-dark": "#694E4E",
           "pastel-darker": "#472D2D",
         },
       },

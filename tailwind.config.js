@@ -15,7 +15,7 @@ module.exports = {
       },
       screens: {
         "project-img": { max: "1024px" },
-        "menu-md": { min: "851px" },
+        "menu-md": { min: "892px" },
       },
       colors: {
         yellow: {

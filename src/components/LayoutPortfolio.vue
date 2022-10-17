@@ -12,6 +12,7 @@
         class="animate__animated animate__fadeInUp"
       />
     </main>
+
     <Footer />
   </div>
 </template>
@@ -35,11 +36,11 @@ export default {
       articles: [
         {
           title: "SOBRE",
-          text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec volutpat ex, sed sodales risus. Sed libero odio, porttitor eget hendrerit non, sollicitudin a quam. Cras consequat, tortor vel congue lacinia, enim nisi ultrices augue, a imperdiet metus lacus et nulla. Sed interdum vitae dolor in dapibus. Cras vulputate convallis ligula, at semper velit tempus vitae. Fusce ac lacus vel ligula euismod dapibus. Fusce sit amet placerat orci. Vestibulum vel orci libero. Vestibulum nec vehicula elit, nec fermentum justo. Mauris vulputate augue nec massa pellentesque, id ultricies risus rutrum. Sed rutrum ligula non libero elementum, ac bibendum nunc posuere. Phasellus non lobortis turpis. Ut iaculis urna convallis est vulputate iaculis. Sed nec convallis sem.",
+          text: "Sou uma Desenvolvedora Júnior com sede de aprendizado, além de ser estudante de Sistemas de Informação. Estou aprendendo na prática tecnologias web, tanto front-end quanto back-end. Comecei a desenvolver em ASP.NET MVC e Vue.js com Tailwind/Bootstrap 5, juntamente com Oracle/SQL Server no banco de dados.<br>Tenho também o pacote básico de linguagens de qualquer desenvolvedor web (Javascript, HTML5 e CSS), enquanto também lido com Python, SQL e C#.<br>Meu objetivo é me estabelecer nessa área web full stack, procurando sempre superar minhas metas.",
         },
         {
           title: "EXPERIÊNCIA",
-          text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nec volutpat ex, sed sodales risus. Sed libero odio, porttitor eget hendrerit non, sollicitudin a quam. Cras consequat, tortor vel congue lacinia, enim nisi ultrices augue, a imperdiet metus lacus et nulla. Sed interdum vitae dolor in dapibus. Cras vulputate convallis ligula, at semper velit tempus vitae. Fusce ac lacus vel ligula euismod dapibus. Fusce sit amet placerat orci. Vestibulum vel orci libero. Vestibulum nec vehicula elit, nec fermentum justo. Mauris vulputate augue nec massa pellentesque, id ultricies risus rutrum. Sed rutrum ligula non libero elementum, ac bibendum nunc posuere. Phasellus non lobortis turpis. Ut iaculis urna convallis est vulputate iaculis. Sed nec convallis sem.",
+          text: "Em janeiro de 2021 iniciei minha graduação no curso de S.I, na UniFOA. Em setembro do mesmo ano, comecei um estágio como programadora, também na UniFOA, e atualmente trabalho na mesma como desenvolvedora web full stack júnior, desenvolvendo sistemas webs/APIs em .NET + React/Vue.js com base de dados Oracle e SQL Server, e também dando manutenção em sistemas legado (ASP clássico/VBScript).",
         },
         {
           title: "PROJETOS",

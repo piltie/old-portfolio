@@ -1,5 +1,5 @@
 <template>
-  <header
+  <footer
     class="m-auto mt-[5em] flex justify-center bg-brown-pastel-light py-[3em] px-[2em] text-[1.3em] font-semibold tracking-wide text-brown-pastel-dark"
   >
     <div
@@ -13,15 +13,16 @@
           <h1 class="font-JosefinSans text-[1.2em]">CONTATO</h1>
 
           <div class="flex flex-col">
-            <button
-              type="button"
+            <a
+              href="./Curriculo.pdf"
+              target="_blank"
               class="flex justify-center py-[0.2em] text-[1em]"
             >
               <PaperClipIcon
                 class="mr-[0.2em] ml-[-0.1em] w-[0.8em] self-center"
               />
               currículo (PDF)
-            </button>
+            </a>
             <a
               href="https://github.com/piltie"
               target="_blank"
@@ -50,7 +51,7 @@
         </p>
       </div>
     </div>
-  </header>
+  </footer>
 </template>
 
 <script>

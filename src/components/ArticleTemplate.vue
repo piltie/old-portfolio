@@ -9,9 +9,11 @@
     </div>
 
     <div>
-      <p v-if="text" class="py-[2em] text-[1.1em] font-semibold text-[#7c7b7b]">
-        {{ text }}
-      </p>
+      <p
+        v-if="text"
+        :id="`${title}Texto`"
+        class="py-[2em] text-[1.1em] font-semibold text-[#7c7b7b]"
+      ></p>
       <div
         v-if="images"
         class="m-auto flex w-[95%] flex-wrap justify-center pb-[2em] text-center text-[1.2em] project-img:w-[100%] project-img:flex-col"
@@ -43,6 +45,12 @@ export default {
     title: { String },
     text: { String, Boolean },
     images: { Array, Boolean },
+  },
+  mounted() {
+    if (this.text) {
+      var test = document.getElementById(`${this.title}Texto`);
+      test.innerHTML = this.text;
+    }
   },
 };
 </script>

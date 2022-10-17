@@ -32,13 +32,15 @@
         </li>
       </ul>
     </nav>
-    <button type="button" class="flex min-w-[4em]">
-      <SunIcon class="w-[1.2em]" />
-    </button>
+    <div class="flex min-w-[4em]">
+      <button type="button" class="w-[1.2em]">
+        <SunIcon />
+      </button>
+    </div>
   </header>
   <div
     id="sideMenuBackground"
-    class="fixed h-[100vh] w-[100vw] after:absolute after:top-0 after:right-0 after:bottom-0 after:left-0 after:block after:bg-black-pastel after:opacity-0 after:transition-opacity after:duration-300 after:ease-in after:content-[''] menu-md:invisible"
+    class="fixed after:absolute after:top-0 after:right-0 after:bottom-0 after:left-0 after:block after:bg-black-pastel after:opacity-0 after:transition-opacity after:duration-300 after:ease-in after:content-[''] menu-md:invisible"
   ></div>
   <nav
     id="sideMenu"
@@ -76,6 +78,7 @@ export default {
       const sideMenu = document.getElementById("sideMenu");
       const barsIcon = document.getElementById("barsIcon");
       const arrowIcon = document.getElementById("arrowIcon");
+      const background = document.getElementById("sideMenuBackground");
 
       sideMenu.addEventListener("animationend", (e) => {
         const menu = e.target;
@@ -85,6 +88,7 @@ export default {
           barsIcon.classList.remove("hidden");
           arrowIcon.classList.add("hidden");
           sideMenu.classList.add("hidden");
+          background.classList.remove("h-[100vh]", "w-[100vw]");
 
           return;
         }
@@ -156,6 +160,7 @@ export default {
 
           background.classList.remove("after:opacity-0");
           background.classList.add("after:opacity-25", "z-30");
+          background.classList.add("h-[100vh]", "w-[100vw]");
 
           sideMenu.classList.remove("hidden");
           sideMenu.classList.add("animate__animated", "animate__slideInLeft");

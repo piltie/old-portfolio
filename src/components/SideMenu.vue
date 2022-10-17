@@ -8,8 +8,8 @@
           :class="[index == 0 ? 'hidden' : '', 'block px-7 py-5']"
           :id="option.name"
           :href="option.href"
-          >{{ option.name }}</a
-        >
+          >{{ option.name }}
+        </a>
       </li>
     </ul>
   </nav>

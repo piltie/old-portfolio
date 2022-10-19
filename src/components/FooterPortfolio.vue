@@ -1,16 +1,21 @@
 <template>
   <footer
-    class="m-auto mt-[5em] flex justify-center bg-brown-pastel-light py-[3em] px-[2em] text-[1.3em] font-semibold tracking-wide text-brown-pastel-dark"
+    class="m-auto mt-[5em] flex justify-center bg-brown-pastel-light py-[3em] text-[1.3em] font-semibold tracking-wide text-brown-pastel-dark dark:bg-[#594545] dark:text-[#F7CCAC] footer-sm:text-[1em] menu-md:text-[1.2em]"
   >
-    <div
-      class="flex h-[15.5em] min-w-[19.8em] flex-col items-center justify-between md:min-w-[21em]"
-    >
-      <img class="self-top w-[6em]" src="../assets/images/logo.png" />
+    <div class="flex h-[15.5em] w-[100%] flex-col items-center justify-between">
+      <img
+        class="self-top block w-[6em] dark:hidden"
+        src="../assets/images/logo.png"
+      />
+      <img
+        class="self-top hidden w-[6em] dark:block"
+        src="../assets/images/logo-dark.png"
+      />
       <div
         class="flex h-[12.5em] flex-col flex-wrap justify-between text-center"
       >
         <div class="flex h-[9.5em] flex-col flex-wrap justify-between">
-          <h1 class="font-JosefinSans text-[1.2em]">CONTATO</h1>
+          <h1 class="text-[1.2em]">CONTATO</h1>
 
           <div class="flex flex-col">
             <a

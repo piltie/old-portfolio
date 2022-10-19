@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white-pastel-medium">
+  <div class="bg-white-pastel-medium dark:bg-[#3A3845]">
     <Menu />
     <Home />
     <main class="m-auto w-[80%]">
@@ -48,29 +48,29 @@ export default {
             {
               src: "molang.png",
               alt: "Molang",
-              caption: "HTML5, CSS3 e Vanilla JS",
+              caption: "html, css e javascript puro",
               link: "https://github.com/piltie/E-commerce-website",
             },
             {
               src: "gatteria.png",
               alt: "Gatteria",
-              caption: "Vue 3 e Tailwind CSS",
+              caption: "vue e tailwind css",
               link: "https://github.com/piltie/E-commerce-website-Vue-",
             },
             {
               src: "embreve.png",
               alt: "Em breve",
-              caption: "React e ASP .NET Core MVC",
+              caption: "react e asp.net core mvc",
             },
             {
               src: "embreve.png",
               alt: "Em breve",
-              caption: "Angular e ASP .NET Core MVC",
+              caption: "angular e asp.net core mvc",
             },
             {
               src: "embreve.png",
               alt: "Em breve",
-              caption: "ASP .NET Core Web API",
+              caption: " asp.net core web api",
             },
           ],
         },

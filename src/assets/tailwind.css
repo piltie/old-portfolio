@@ -27,9 +27,11 @@
   a,
   button {
     @apply hover:text-brown-pastel-medium;
+    @apply dark:hover:text-[#cfc4c4];
   }
   h1 {
-    @apply font-bold;
+    @apply font-semibold;
+    @apply font-JosefinSans;
   }
   h2 {
     @apply font-medium;

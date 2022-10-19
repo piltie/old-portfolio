@@ -1,10 +1,10 @@
 <template>
   <div
     id="HOME"
-    class="animate__animated animate__fadeInUp m-auto flex w-[100%] flex-col justify-between py-[3em] pb-0 pt-[5em] text-[1.3em] text-brown-pastel-dark md:w-[21.5em] md:flex-row md:pt-[5em]"
+    class="animate__animated animate__fadeInUp m-auto flex w-[100%] flex-col justify-between py-[3em] pb-0 pt-[5em] text-[1.2em] text-brown-pastel-dark dark:text-[#F7CCAC] md:w-[21.5em] md:flex-row md:pt-[5em] menu-md:text-[1em]"
   >
     <img
-      class="m-auto w-[8em] rounded-full border-[0.3em] border-white-pastel-light outline outline-[0.01px] outline-[#dddcdc] md:m-0"
+      class="m-auto w-[8em] rounded-full border-[0.3em] border-white-pastel-light outline outline-[0.01px] outline-[#dddcdc] dark:border-brown-pastel-darkest dark:outline-[#815B5B] md:m-0"
       src="../assets/images/sarah.jpg"
     />
 
@@ -12,8 +12,8 @@
       class="flex h-[6em] flex-col justify-between self-center pt-[1em] text-center md:pt-0 md:text-start"
     >
       <div>
-        <h1 class="font-JosefinSans font-semibold">sarah</h1>
-        <h2 class="font-semibold">desenvolvedora & artista.</h2>
+        <h1>sarah</h1>
+        <h2>desenvolvedora & artista.</h2>
       </div>
       <div class="flex w-[6em] justify-between self-center md:self-start">
         <a href="https://github.com/piltie" target="_blank"

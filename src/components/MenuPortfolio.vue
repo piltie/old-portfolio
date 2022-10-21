@@ -49,7 +49,7 @@
   </header>
   <div
     id="sideMenuBackground"
-    class="after:bg-black-pastel fixed after:absolute after:top-0 after:right-0 after:bottom-0 after:left-0 after:block after:opacity-0 after:transition-opacity after:duration-300 after:ease-in after:content-[''] menu-md:invisible"
+    class="fixed after:absolute after:top-0 after:right-0 after:bottom-0 after:left-0 after:block after:bg-black after:opacity-0 after:transition-opacity after:duration-300 after:ease-in after:content-[''] menu-md:invisible"
   ></div>
   <nav
     id="sideMenu"
@@ -182,14 +182,16 @@ export default {
           background.classList.add(
             "after:opacity-25",
             "dark:after:opacity-50",
-            "z-30"
+            "z-30",
+            "h-[100vh]",
+            "w-[100vw]"
           );
-          background.classList.add("h-[100vh]", "w-[100vw]");
 
           sideMenu.classList.remove("hidden");
           sideMenu.classList.add("animate__animated", "animate__slideInLeft");
 
           document.body.style.overflow = "hidden";
+
           return;
         }
 

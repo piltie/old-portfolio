@@ -17,7 +17,7 @@
       <p
         v-if="article.text"
         :id="`${article.title}Texto`"
-        class="py-[2em] text-[1.2em] font-semibold text-[#7c7b7b] dark:text-[#aaa7a7]"
+        class="py-[2em] text-center text-[1.2em] font-semibold text-[#7c7b7b] dark:text-[#aaa7a7]"
       ></p>
       <div
         v-if="article.images"

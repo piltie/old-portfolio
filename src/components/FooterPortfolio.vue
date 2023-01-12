@@ -2,7 +2,7 @@
   <footer
     class="m-auto mt-[5em] flex justify-center bg-brown-pastel-light py-[3em] text-[1.3em] font-semibold tracking-wide text-brown-pastel-dark dark:bg-[#594545] dark:text-[#F7CCAC] footer-sm:text-[1em] menu-md:text-[1.2em]"
   >
-    <div class="flex h-[15.5em] w-[100%] flex-col items-center justify-between">
+    <div class="flex h-[17em] w-[100%] flex-col items-center justify-between">
       <img
         class="self-top block w-[6em] dark:hidden"
         src="../assets/images/logo.png"
@@ -11,10 +11,8 @@
         class="self-top hidden w-[6em] dark:block"
         src="../assets/images/logo-dark.png"
       />
-      <div
-        class="flex h-[12.5em] flex-col flex-wrap justify-between text-center"
-      >
-        <div class="flex h-[9.5em] flex-col flex-wrap justify-between">
+      <div class="flex h-[14em] flex-col flex-wrap justify-between text-center">
+        <div class="flex h-[12em] flex-col flex-wrap justify-between">
           <h1 class="text-[1.2em]">CONTATO</h1>
 
           <div class="flex flex-col">
@@ -27,6 +25,16 @@
                 class="mr-[0.2em] ml-[-0.1em] w-[0.8em] self-center"
               />
               currículo (PDF)
+            </a>
+            <a
+              href="./Curriculum.pdf"
+              target="_blank"
+              class="flex justify-center py-[0.2em] text-[1em]"
+            >
+              <PaperClipIcon
+                class="mr-[0.2em] ml-[-0.1em] w-[0.8em] self-center"
+              />
+              curriculum (english)
             </a>
             <a
               href="https://github.com/piltie"

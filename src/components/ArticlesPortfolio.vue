@@ -51,7 +51,7 @@ export default {
       articles: [
         {
           title: "SOBRE",
-          text: "Sou uma Desenvolvedora com sede de aprendizado, além de ser estudante de Sistemas de Informação.<br>Comecei a desenvolver em ASP.NET MVC e Vue.js com Tailwind/Bootstrap 5, juntamente com Oracle no banco de dados. Tenho o pacote básico de linguagens de qualquer desenvolvedor web (Javascript, HTML5 e CSS), enquanto também lido com Python, SQL e C#. Também comecei a estudar Vue.js, React.js (Typescript), MongoDB e PostgreSQL (C/ Sequelize) Dockers e Tailwind, e a aplicar meus conhecimentos.<br>Em quesito de técnicas de desenvolvimento e afins, tenho conhecimento em OOP e POP, Metodologia Ágil, Web APIs REST, Arquitetura MVC e TDD.",
+          text: "Sou uma Desenvolvedora com sede de aprendizado, além de ser estudante de Sistemas de Informação.<br>Comecei a desenvolver em ASP.NET MVC e Vue.js com Tailwind/Bootstrap 5, juntamente com Oracle no banco de dados. Tenho o pacote básico de linguagens de qualquer desenvolvedor web (Javascript, HTML5 e CSS), enquanto também lido com Python, SQL e C#. Também comecei a estudar Vue.js, Entity Framework, React.js (Typescript), MongoDB e PostgreSQL (C/ Sequelize) Dockers e Tailwind, e a aplicar meus conhecimentos.<br>Em quesito de técnicas de desenvolvimento e afins, tenho conhecimento em OOP e POP, Metodologia Ágil, Web APIs REST, Arquitetura MVC e TDD.",
         },
         {
           title: "EXPERIÊNCIA",

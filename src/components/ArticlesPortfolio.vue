@@ -51,11 +51,11 @@ export default {
       articles: [
         {
           title: "SOBRE",
-          text: "Sou uma Desenvolvedora com sede de aprendizado, além de ser estudante de Sistemas de Informação.<br>Comecei a desenvolver em ASP.NET MVC e Vue.js com Tailwind/Bootstrap 5, juntamente com Oracle no banco de dados. Tenho o pacote básico de linguagens de qualquer desenvolvedor web (Javascript, HTML5 e CSS), enquanto também lido com Python, SQL e C#. Também comecei a estudar Vue.js, Entity Framework, React.js (Typescript), MongoDB e PostgreSQL (C/ Sequelize) Dockers e Tailwind, e a aplicar meus conhecimentos.<br>Em quesito de técnicas de desenvolvimento e afins, tenho conhecimento em OOP e POP, Metodologia Ágil, Web APIs REST, Arquitetura MVC e TDD.",
+          text: "Sou uma desenvolvedora com sede de aprendizado, e estudante de Sistemas de Informação.<br>Comecei a desenvolver tanto em front-end quanto em back-end na segunda metade de 2021, adentrando o mundo d C# e ASP.NET (MVC, Web APIs REST), além de linguagens voltadas para web (Javascript e HTML/CSS), juntamente com SQL (Oracle e SQL Server) na área de banco de dados. Em 2022, entrei de cabeça em frameworks de front-end (Vue e React -Typescript-), assim como o css (Tailwind e Bootstrap). Também comecei a estudar Entity Framework, MongoDB, PostgreSQL (C/ Sequelize) e Dockers.<br>Em quesito de técnicas de desenvolvimento e afins, estou estudando Metodologia Ágil e TDD.",
         },
         {
           title: "EXPERIÊNCIA",
-          text: "Em janeiro de 2021 iniciei minha graduação no curso de S.I, na UniFOA. Em setembro do mesmo ano, comecei um estágio como programadora, também na UniFOA, e atualmente trabalho na mesma como desenvolvedora web full stack júnior, desenvolvendo sistemas webs/APIs em .NET + React/Vue.js com base de dados Oracle e SQL Server (utilizando ferramentas como git e azure), e também dando manutenção em sistemas legado (ASP clássico/VBScript).",
+          text: "Em janeiro de 2021 iniciei minha graduação no curso de S.I, na UniFOA. Em setembro do mesmo ano, comecei um estágio como programadora, também na UniFOA, e atualmente trabalho na mesma como desenvolvedora web full stack júnior, desenvolvendo sistemas webs/APIs em .NET com o Razor pages (apliquei também React/Vue em um projeto ou outro), com base de dados Oracle e SQL Server (utilizando git e azure para armazenar os repositórios), e também dando manutenção em sistemas legado (ASP clássico/VBScript).<br />A maioria dos meus projetos de trabalho são para sistemas internos da empresa ,mas no meu tempo livre me esforço para enriquecer meu portfólio pessoal.",
         },
         {
           title: "PROJETOS",

@@ -27,16 +27,6 @@
               currículo (PDF)
             </a>
             <a
-              href="./Curriculum.pdf"
-              target="_blank"
-              class="flex justify-center py-[0.2em] text-[1em]"
-            >
-              <PaperClipIcon
-                class="mr-[0.2em] ml-[-0.1em] w-[0.8em] self-center"
-              />
-              curriculum (english)
-            </a>
-            <a
               href="https://github.com/piltie"
               target="_blank"
               class="py-[0.2em] text-[1em]"
